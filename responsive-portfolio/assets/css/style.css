@@ -153,23 +153,78 @@ a {
 
 @media only screen and (max-width: 640px) {
     div.top {
-        float: relative;
+        
         width: 100%;
-        position: relative;
+        position: static;  
+        height: 140px;  
     }
     .container {
         width: 100%; 
     }
     .bodytext {
         width: 100%;
-        float: none
+        float: none;
+        position: static;
+    }
+    .links {    
+        float: initial;
+        position: relative;
+    }
+    #name {
+        width: 100%;
+        position: fixed;
+        margin: 0;  
+    }
 }
 
 
 @media only screen and (max-width: 768px) {
-
-}   
+    div.top {
+        float: initial;
+        width: 100%;
+        position: fixed;    
+    }
+    .container {
+        width: 100%; 
+    }
+    .bodytext {
+        width: 100%;
+        float: left;
+        position: static;
+    }
+    .links {    
+        float: initial;
+        position: relative;
+    }
+    #name {
+        width: 100%;
+        position: fixed;
+        margin: 0;  
+    }
+}
 
 @media only screen and (max-width: 980px) {
-
+    div.top {
+        float: initial;
+        width: 100%;
+        position: fixed;    
+    }
+    .container {
+        width: 100%; 
+    }
+    .bodytext {
+        width: 100%;
+        float: none;
+        position: fixed;
+        left: 20px;
+    }
+    .links {    
+        float: initial;
+        position: relative;
+    }
+    #name {
+        width: 100%;
+        position: fixed;
+        margin: 0;  
+    }
 }
